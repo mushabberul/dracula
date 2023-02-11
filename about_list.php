@@ -17,7 +17,7 @@ $about_from_db = mysqli_query($db_connect, $about_select_query);
         unset($_SESSION['about_added_successfully']);
         ?>
         <?php if (isset($_SESSION['delete_about_successfully'])) : ?>
-            <div class="alert alert-success">
+            <div class="alert alert-danger">
                 <?= $_SESSION['delete_about_successfully'] ?>
             </div>
         <?php endif;

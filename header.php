@@ -106,6 +106,19 @@ require_once 'auth_check.php';
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#portfolio" aria-expanded="true" aria-controls="portfolio">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Portfolio</span>
+                </a>
+                <div id="portfolio" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Portfilios:</h6>
+                        <a class="collapse-item" href="add_portfolio.php">Add</a>
+                        <a class="collapse-item" href="portfolio_list.php">List</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
