@@ -9,7 +9,14 @@ require_once 'header.php';
                     <h2>Add Project</h2>
                 </div>
                 <div class="card-body">
-
+                    <?php if (isset($_SESSION['about_added_successfully'])) : ?>
+                        <div class="alert alert-success">
+                            <?php echo $_SESSION['about_added_successfully']; ?>
+                        </div>
+                    <?php
+                    endif;
+                    unset($_SESSION['about_added_successfully']);
+                    ?>
                     <form method="post" action="store_about.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="month">Project completed Time</label>

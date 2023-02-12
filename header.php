@@ -119,6 +119,19 @@ require_once 'auth_check.php';
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#service" aria-expanded="true" aria-controls="service">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Service</span>
+                </a>
+                <div id="service" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Services:</h6>
+                        <a class="collapse-item" href="add_service.php">Add</a>
+                        <a class="collapse-item" href="service_list.php">List</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
