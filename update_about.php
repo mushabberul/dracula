@@ -1,7 +1,4 @@
 <?php
-// print_r($_POST);
-// echo basename($_POST['old_image']);
-// die;
 session_start();
 require_once 'db.php';
 $month = $_POST['month'];

@@ -132,6 +132,19 @@ require_once 'auth_check.php';
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#hero" aria-expanded="true" aria-controls="hero">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Hero</span>
+                </a>
+                <div id="hero" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Services:</h6>
+                        <a class="collapse-item" href="add_hero.php">Add</a>
+                        <a class="collapse-item" href="hero_list.php">List</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
