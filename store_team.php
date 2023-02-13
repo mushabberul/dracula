@@ -36,5 +36,5 @@ if (empty($name)) {
         }
     }
     $_SESSION['team_member_added_successfully'] = 'Team member added successfully';
-    header('location: add_team.php');
+    header('location: team_list.php');
 }

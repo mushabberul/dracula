@@ -30,7 +30,7 @@ require_once 'header.php';
 
                         <div class="form-group">
                             <label for="description">Project Description</label>
-                            <input name="description" type="text" class="form-control" id="description" placeholder="Project description">
+                            <textarea name="description" rows="6" type="text" class="form-control" id="description" placeholder="Project description"></textarea>
                         </div>
 
 

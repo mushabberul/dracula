@@ -28,10 +28,9 @@ $after_assoc = mysqli_fetch_assoc($service_from_db);
 
                         </div>
                         <div class="form-group">
-                            <label for="facebook">Description</label>
-                            <input name="description" type="text" class="form-control" id="description" value="<?php echo $after_assoc['description'] ?? ''; ?>">
+                            <label for="description">Description</label>
+                            <textarea name="description" type="text" class="form-control" id="description" rows="6"><?php echo $after_assoc['description'] ?? ''; ?></textarea>
                         </div>
-
 
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

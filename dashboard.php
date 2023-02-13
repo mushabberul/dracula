@@ -1,5 +1,32 @@
 <?php
 require_once 'header.php';
+require_once 'db.php';
+
+$query_user_select = "SELECT COUNT(*) total_user FROM users";
+$select_from_db = mysqli_query($db_connect, $query_user_select);
+$user_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+$query_contact_select = "SELECT COUNT(*) total_contact FROM contacts";
+$select_from_db = mysqli_query($db_connect, $query_contact_select);
+$contact_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+$query_client_select = "SELECT COUNT(*) total_client FROM client_logos";
+$select_from_db = mysqli_query($db_connect, $query_client_select);
+$client_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+$query_team_member_select = "SELECT COUNT(*) total_team_member FROM teams";
+$select_from_db = mysqli_query($db_connect, $query_team_member_select);
+$team_member_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+$query_portfolio_select = "SELECT COUNT(*) total_portfolio FROM portfolios";
+$select_from_db = mysqli_query($db_connect, $query_portfolio_select);
+$portfolio_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+$query_service_select = "SELECT COUNT(*) total_service FROM services";
+$select_from_db = mysqli_query($db_connect, $query_service_select);
+$service_after_assoc = mysqli_fetch_assoc($select_from_db);
+
+
 ?>
 
 <!-- Begin Page Content -->
@@ -29,28 +56,32 @@ require_once 'header.php';
             <!-- Project Card Example -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Summary</h6>
                 </div>
                 <div class="card-body">
-                    <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+                    <h4 class="small font-weight-bold">Total User<span class="float-right"><?php echo $user_after_assoc['total_user'] ?></span></h4>
                     <div class="progress mb-4">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width:<?php echo $user_after_assoc['total_user'] ?>%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                    <h4 class="small font-weight-bold">Total Contact <span class="float-right"><?php echo $contact_after_assoc['total_contact']; ?></span></h4>
                     <div class="progress mb-4">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width:<?php echo $contact_after_assoc['total_contact']; ?>%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                    <h4 class="small font-weight-bold">Total Service <span class="float-right"><?php echo $service_after_assoc['total_service']; ?></span></h4>
                     <div class="progress mb-4">
-                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" role="progressbar" style="width:<?php echo $service_after_assoc['total_service']; ?>%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                    <h4 class="small font-weight-bold">Total Client <span class="float-right"><?php echo $client_after_assoc['total_client']; ?></span></h4>
                     <div class="progress mb-4">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" role="progressbar" style="width:<?php echo $client_after_assoc['total_client']; ?>%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+                    <h4 class="small font-weight-bold">Total Team Member <span class="float-right"><?php echo $team_member_after_assoc['total_team_member']; ?></span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-info" role="progressbar" style="width:<?php echo $team_member_after_assoc['total_team_member']; ?>%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Total Completed Project <span class="float-right"><?php echo $portfolio_after_assoc['total_portfolio']; ?></span></h4>
                     <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $portfolio_after_assoc['total_portfolio']; ?>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>

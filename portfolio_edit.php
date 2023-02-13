@@ -25,14 +25,14 @@ $after_assoc = mysqli_fetch_assoc($portfolio_from_db);
 
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <input name="description" type="text" class="form-control" id="description" value="<?php echo $after_assoc['description'] ?? ''; ?>">
+                            <textarea name="description" type="text" class="form-control" id="description" rows="6"><?php echo $after_assoc['description'] ?? ''; ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="client_name">Client Name</label>
                             <input name="client_name" type="text" class="form-control" id="client_name" value="<?php echo $after_assoc['client_name'] ?? ''; ?>">
                         </div>
                         <div class="form-group">
-                            <label for="category">Client Name</label>
+                            <label for="category">Category</label>
                             <input name="category" type="text" class="form-control" id="category" value="<?php echo $after_assoc['category'] ?? ''; ?>">
                         </div>
                         <div class="form-group">

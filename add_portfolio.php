@@ -18,7 +18,7 @@ require_once 'header.php';
                         </div>
                         <div class="form-group">
                             <label for="description">Project Description</label>
-                            <input name="description" type="text" class="form-control" id="description" placeholder="Project description">
+                            <textarea rows="6" name="description" type="text" class="form-control" id="description" placeholder="Project description"></textarea>
 
                         </div>
                         <div class="form-group">

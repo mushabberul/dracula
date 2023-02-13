@@ -22,7 +22,7 @@ if (empty($name)) {
     $exact_extension = end($extension);
     $new_name = $id . '.' . $exact_extension;
 
-    $allowed_extension = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', "JPEG"];
+    $allowed_extension = ['png', 'jpg', 'jpeg', 'svg', 'PNG', 'JPG', 'JPEG'];
     if ($image_name) {
         if ("default.jpg" != basename($old_image)) {
             unlink($old_image);

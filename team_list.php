@@ -16,6 +16,14 @@ $team_from_db = mysqli_query($db_connect, $team_select_query);
         <?php endif;
         unset($_SESSION['delete_team_successfully']);
         ?>
+        <?php if (isset($_SESSION['team_member_added_successfully'])) : ?>
+            <div class="alert alert-success">
+                <?php echo $_SESSION['team_member_added_successfully']; ?>
+            </div>
+        <?php
+        endif;
+        unset($_SESSION['team_member_added_successfully']);
+        ?>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>

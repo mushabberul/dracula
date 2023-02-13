@@ -21,7 +21,7 @@ if (empty($name)) {
     $exact_extension = end($extension);
     $id = mysqli_insert_id($db_connect);
     $new_name = $id . '.' . $exact_extension;
-    $allowed_extension = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', "JPEG"];
+    $allowed_extension = ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'jpeg', 'svg'];
 
     if (in_array($exact_extension, $allowed_extension)) {
         if ($image_size < 1 * 1024 * 1024) {

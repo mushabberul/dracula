@@ -65,57 +65,15 @@ require_once 'auth_check.php';
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Sections</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-
-                        <h6 class="collapse-header">Section:</h6>
-                        <a class="collapse-item" href="user_list.php">User List</a>
-                        <a class="collapse-item" href="contact_list.php">Contact List</a>
-
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#team" aria-expanded="true" aria-controls="team">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#hero" aria-expanded="true" aria-controls="hero">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Team</span>
+                    <span>Hero</span>
                 </a>
-                <div id="team" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="hero" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Teams:</h6>
-                        <a class="collapse-item" href="add_team.php">Add</a>
-                        <a class="collapse-item" href="team_list.php">List</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#about" aria-expanded="true" aria-controls="about">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>About</span>
-                </a>
-                <div id="about" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Projects:</h6>
-                        <a class="collapse-item" href="add_about.php">Add</a>
-                        <a class="collapse-item" href="about_list.php">List</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#portfolio" aria-expanded="true" aria-controls="portfolio">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Portfolio</span>
-                </a>
-                <div id="portfolio" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Portfilios:</h6>
-                        <a class="collapse-item" href="add_portfolio.php">Add</a>
-                        <a class="collapse-item" href="portfolio_list.php">List</a>
+                        <h6 class="collapse-header">Services:</h6>
+                        <a class="collapse-item" href="add_hero.php">Add</a>
+                        <a class="collapse-item" href="hero_list.php">List</a>
                     </div>
                 </div>
             </li>
@@ -133,18 +91,46 @@ require_once 'auth_check.php';
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#hero" aria-expanded="true" aria-controls="hero">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#portfolio" aria-expanded="true" aria-controls="portfolio">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Hero</span>
+                    <span>Portfolio</span>
                 </a>
-                <div id="hero" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="portfolio" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Services:</h6>
-                        <a class="collapse-item" href="add_hero.php">Add</a>
-                        <a class="collapse-item" href="hero_list.php">List</a>
+                        <h6 class="collapse-header">Portfilios:</h6>
+                        <a class="collapse-item" href="add_portfolio.php">Add</a>
+                        <a class="collapse-item" href="portfolio_list.php">List</a>
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#about" aria-expanded="true" aria-controls="about">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>About</span>
+                </a>
+                <div id="about" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Projects:</h6>
+                        <a class="collapse-item" href="add_about.php">Add</a>
+                        <a class="collapse-item" href="about_list.php">List</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#team" aria-expanded="true" aria-controls="team">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Team</span>
+                </a>
+                <div id="team" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Teams:</h6>
+                        <a class="collapse-item" href="add_team.php">Add</a>
+                        <a class="collapse-item" href="team_list.php">List</a>
+                    </div>
+                </div>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#client_logo" aria-expanded="true" aria-controls="client_logo">
                     <i class="fas fa-fw fa-cog"></i>
@@ -161,9 +147,14 @@ require_once 'auth_check.php';
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="user_list.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>User List</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact_list.php">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Contact List</span></a>
             </li>
 
             <!-- Divider -->
@@ -207,9 +198,9 @@ require_once 'auth_check.php';
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a> -->
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="change_password.php">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                    Change Password
                                 </a>
 
                                 <div class="dropdown-divider"></div>

@@ -16,6 +16,7 @@ if (empty($title)) {
 } else {
     $hero_insert_query = "INSERT INTO heros(subtitle,title,button_text) VALUES('$subtitle','$title','$button_text')";
     $hero_from_db = mysqli_query($db_connect, $hero_insert_query);
+
     $image = $_FILES['image'];
     $image_size = $_FILES['image']['size'];
     $image_name = $_FILES['image']['name'];

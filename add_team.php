@@ -9,14 +9,7 @@ require_once 'header.php';
                     <h2>Add Team Member</h2>
                 </div>
                 <div class="card-body">
-                    <?php if (isset($_SESSION['team_member_added_successfully'])) : ?>
-                        <div class="alert alert-success">
-                            <?php echo $_SESSION['team_member_added_successfully']; ?>
-                        </div>
-                    <?php
-                    endif;
-                    unset($_SESSION['team_member_added_successfully']);
-                    ?>
+
                     <form method="post" action="store_team.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -34,15 +27,15 @@ require_once 'header.php';
                         </div>
                         <div class="form-group">
                             <label for="facebook">Facebook</label>
-                            <input name="facebook" type="text" class="form-control" id="facebook" placeholder="facebook.com/sabbirmia.bd">
+                            <input name="facebook" type="url" class="form-control" id="facebook" placeholder="https://facebook.com/sabbirmia.bd">
                         </div>
                         <div class="form-group">
                             <label for="twitter">Twitter</label>
-                            <input name="twitter" type="text" class="form-control" id="twitter" placeholder="twitter.com/sabbirmia.bd">
+                            <input name="twitter" type="url" class="form-control" id="twitter" placeholder="https://twitter.com/sabbirmia.bd">
                         </div>
                         <div class="form-group">
                             <label for="linkedin">LinkedIn</label>
-                            <input name="linkedin" type="text" class="form-control" id="linkedin" placeholder="linkedin.com/sabbirmia.bd">
+                            <input name="linkedin" type="url" class="form-control" id="linkedin" placeholder="https://linkedin.com/sabbirmia.bd">
                         </div>
                         <div class="form-group">
                             <label for="image">Image</label>
