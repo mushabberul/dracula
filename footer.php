@@ -1,3 +1,8 @@
+<?php
+if ($_SERVER['PHP_SELF'] == '/dracula/footer.php') {
+    header('location: 404.php');
+}
+?>
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
